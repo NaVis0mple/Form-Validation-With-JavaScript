@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>form validation with javascript</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- novalidate to turn off the default submit alert -->
+    <form id="myform" novalidate>
+      <p>
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email" required />
+        <span id="emailerror"></span>
+      </p>
+      <p>
+        <label for="country">country:</label>
+        <select name="country" id="country">
+          <option value="jp">jp</option>
+          <option value="cn">cn</option>
+          <option value="kr">kr</option>
+          <option value="tw">tw</option>
+        </select>
+      </p>
+      <p>
+        <label for="zip">zip:</label>
+        <input type="text" name="zip" id="zip" required />
+        <span id="ziperror"></span>
+      </p>
+      <p>
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" required />
+      </p>
+      <p>
+        <label for="repassword">password confirmation:</label>
+        <input type="password" name="repassword" id="repassword" required />
+        <span id="passworderror"></span>
+      </p>
+      <p>
+        <button>submit</button>
+      </p>
+    </form>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

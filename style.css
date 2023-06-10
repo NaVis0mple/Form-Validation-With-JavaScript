@@ -1,0 +1,22 @@
+body {
+    width: 200px;
+    margin: 0 auto;
+}
+
+p {
+    display: grid;
+}
+
+input {
+    appearance: none;
+    border: 1px solid #333;
+    outline: none;
+}
+
+input:focus:invalid {
+    border: 1px solid rgb(173, 25, 5);
+}
+
+.invalid {
+    border: 1px solid rgb(173, 25, 5);
+}
